@@ -1,0 +1,5 @@
+
+*.ipch
+.vs/ShapesGame/v15/.suo
+*.opendb
+*.db
