@@ -1,1 +1,19 @@
-﻿sfml-graphics-d.lib(sfml-graphics-d-2.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'
+﻿  pch.cpp
+  Entiny.cpp
+  Sfml_Base.cpp
+f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(34): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(42): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(53): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(54): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(63): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Generating Code...
+sfml-graphics-d.lib(sfml-graphics-d-2.dll) : fatal error LNK1112: module machine type 'x64' conflicts with target machine type 'x86'

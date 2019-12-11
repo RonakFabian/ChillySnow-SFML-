@@ -1,8 +1,11 @@
 #include"pch.h"
+
 #include<iostream>
+
 #include"SFML\Graphics.hpp"
 #include"SFML\Window.hpp"
 #include"SFML\System.hpp"
+
 #include<math.h>
 #include<vector>
 #include<cstdlib>
@@ -10,7 +13,6 @@
 
 
 using namespace sf;
-
 
 
 class Tree
@@ -57,6 +59,34 @@ public:
 };
 
 
+class Player
+{
+
+private:
+	
+
+public:
+	sf::Sprite sp;
+	sf::Texture* t;
+
+	Player(sf::Texture* t)
+	{
+		this->t = t;
+		sp.setTexture(*t);
+
+		
+
+	
+	}
+
+	void Move()
+	{
+		if (Keyboard::isKeyPressed(Keyboard::A))
+			sp.move(-10.f, 0.f);
+		if (Keyboard::isKeyPressed(Keyboard::D))
+			sp.move(10.f, 0.f);
+	}
+};
 
 int main()
 {
@@ -68,7 +98,9 @@ int main()
 	std::vector<Tree> treePool;
 	
 	Texture t;
+	Texture pt;
 	t.loadFromFile("Images/Tree.png");
+	pt.loadFromFile("Images/Ball.png");
 
 	for (size_t i = 0; i < 15; i++)
 	{
@@ -78,10 +110,11 @@ int main()
 
 
 
-	CircleShape player(25.f);
-	player.setFillColor(Color::White);
-	player.setPointCount(3);
-	player.setOrigin(25.f, 25.f);
+	
+
+	
+	Player player(&pt);
+	player.sp.setPosition(250, 100);
 
 
 
@@ -99,21 +132,20 @@ int main()
 		}
 
 	
-		if (Keyboard::isKeyPressed(Keyboard::A))
-			player.move(-10.f, 0.f);
-		if (Keyboard::isKeyPressed(Keyboard::D))
-			player.move(10.f, 0.f);
+		
 		
 
 		window.clear(Color(230,240,234));
+		player.Move();
 
+		window.draw(player.sp);
 		for (size_t i = 0; i < treePool.size(); i++)
 		{
 			window.draw(treePool[i].sp);
 			treePool[i].Move();
 
 		}
-		window.draw(player);
+		
 
 
 		window.display();
