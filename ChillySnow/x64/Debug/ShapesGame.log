@@ -1,16 +1,15 @@
 ﻿  Sfml_Base.cpp
-f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(36): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(44): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+f:\chillysnow-sfml-\chillysnow\tree.h(30): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+f:\chillysnow-sfml-\chillysnow\tree.h(38): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(45): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(55): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+f:\chillysnow-sfml-\chillysnow\tree.h(50): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
           with
           [
               T=float
           ]
-f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(56): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(93): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+f:\chillysnow-sfml-\chillysnow\sfml_base.cpp(90): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   ShapesGame.vcxproj -> F:\ChillySnow-SFML-\ChillySnow\x64\Debug\ShapesGame.exe
