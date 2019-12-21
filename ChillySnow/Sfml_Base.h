@@ -1,7 +1,7 @@
 #pragma once
 #include"Tree.h"
 #include"Player.h"
-#include"HighScore.h"
+
 
 
 bool isDead = false;
