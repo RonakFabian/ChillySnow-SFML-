@@ -1,2 +1,8 @@
 
 *.idb
+ChillySnow/x64/Debug/vc141.idb
+ChillySnow/x64/Debug/vc141.pdb
+*.idb
+*.pdb
+*.tlog
+*.tlog

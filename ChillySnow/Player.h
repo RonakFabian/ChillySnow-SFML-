@@ -4,36 +4,33 @@ class Player
 {
 
 private:
-	bool isMovingRight;
+
+	Vector2f pos;
+	float speed = 5.0f;
 
 
 public:
 	sf::Sprite sp;
 	sf::Texture* t;
 
+	sf::CircleShape collider;
 
 
-	float speed = 5.0f;
-
-
-
-	Vector2f pos;
+	//Setting Texture to Sprite
 	Player(sf::Texture* t)
 	{
 		this->t = t;
 		sp.setTexture(*t);
 
+		collider.setRadius(17.5f);
+		collider.setFillColor(sf::Color(255, 0, 0, 200));
+		collider.setPosition(sp.getPosition());
 
 	}
 
-	float lerp(float v0, float v1, float t) {
-		return (1 - t) * v0 + t * v1;
-	}
-
-
+	//Player Movement
 	void Move()
 	{
-
 
 		if (Keyboard::isKeyPressed(Keyboard::Left) || Keyboard::isKeyPressed(Keyboard::A))
 		{
@@ -45,7 +42,6 @@ public:
 			sp.move(speed, 0);
 
 		}
-
-
+		collider.setPosition(sp.getPosition());
 	}
 };
